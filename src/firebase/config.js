@@ -2,20 +2,19 @@ import * as firebase from 'firebase/app'
 import 'firebase/storage'
 import 'firebase/firestore'
 
-const firebaseConfig = {
-  apiKey: "AIzaSyDiNH58b1tkT2k2lykN9EPqI-9sIXbOmOM",
-  authDomain: "modern-javascript-9ebe7.firebaseapp.com",
-  databaseURL: "https://modern-javascript-9ebe7.firebaseio.com",
-  projectId: "modern-javascript-9ebe7",
-  storageBucket: "modern-javascript-9ebe7.appspot.com",
-  messagingSenderId: "635636363880",
-  appId: "1:635636363880:web:260cadede62418522581dd",
-  measurementId: "G-ZG8RMSCWH4"
+var firebaseConfig = {
+  apiKey: "AIzaSyAnpEKLhteZUVXL99Qu5dP3NFIR757_VMk",
+  authDomain: "react-firebase-2e70d.firebaseapp.com",
+  databaseURL: "https://react-firebase-2e70d.firebaseio.com",
+  projectId: "react-firebase-2e70d",
+  storageBucket: "react-firebase-2e70d.appspot.com",
+  messagingSenderId: "679928379621",
+  appId: "1:679928379621:web:c5619e4587101dda113c0c"
 };
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
-firebase.initializeApp(firebaseConfig)
-
-const projectStorage = firebase.storage();
-const projectFirestore = firebase.firestore();
+const projectStorage = firebase.storage()
+const projectFirestore = firebase.firestore()
 
 export {projectStorage, projectFirestore}
